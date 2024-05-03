@@ -1,5 +1,7 @@
 **Weather Forecast Application** :
 
+**Public Link to use the application**: https://adityaarandhawaweatherapp.netlify.app/
+
 **Description** : 
 This is a simple weather forecast application built using React.js. It fetches weather forecast data from the OpenWeatherMap API based on the city name and displays the forecast for the next few days along with a chart showing the temperature trends.
 
@@ -25,6 +27,7 @@ Start the development server: npm start
 Enter a city name in the input field.
 Select the unit (metric or imperial).
 Click on the "Get Forecast" button to fetch and display the weather forecast.
+
 
 **Credits** :
 Weather forecast data: OpenWeatherMap API
