@@ -1,0 +1,31 @@
+.weather-container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .weather-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .weather-data {
+    margin-bottom: 10px;
+  }
+  
+  .weather-data p {
+    margin: 5px 0;
+  }
+  
+  .weather-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .weather-footer {
+    font-size: 14px;
+    color: #666;
+  }
+  

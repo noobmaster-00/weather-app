@@ -1,0 +1,321 @@
+
+body{
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+}
+  /*-----------------------------------------SearchBar.js-------------------*/
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #000000; /* Matching dark background */
+}
+
+.search-input {
+    border: 2px solid #555; /* Light grey border, less visible */
+    padding: 8px 20px;
+    border-radius: 20px; /* Round corners */
+    width: 300px; /* Adjustable based on preference */
+    outline: none; /* Removes the outline */
+    color: white; /* White text */
+    background-color: #333; /* Dark background inside the input */
+    margin-right: -36px; /* Overlap the button over the input */
+}
+
+.search-input::placeholder {
+    color: #aaa; /* Lighter placeholder text */
+}
+
+.search-input:focus {
+    border-color: #aaa; /* Changes border color on focus */
+}
+
+.search-button {
+    border: none;
+    cursor: pointer;
+    width: 26px; /* Adjust as needed */
+    height: 26px; /* Square dimensions */
+    border-radius: 50%; /* Makes it round */
+    background-color: #333; /* Dark background for the button */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.search-button:hover {
+    background-color: #444; /* Slightly lighter on hover */
+}
+
+  
+  /*------------------------Forecast.cs---------------------------------*/
+  
+  /* Forecast.css */
+.forecast-container {
+  overflow-x: auto;
+  padding: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #333; /* Dark background */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #ddd; /* Light grey text for readability */
+  border: 2px solid #fff;
+  margin-top: 0px;
+}
+
+.forecast-scrollable {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.forecast-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin-right: 20px;
+  background-color: #444; /* Slightly lighter background for each day */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.forecast-date {
+  color: #ccc;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.forecast-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-image {
+  width: 80px; /* Larger icon */
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.forecast-weather {
+  font-size: 14px;
+  color: #fff;
+}
+
+.forecast-temperature {
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFD700; /* Gold color for temperature to stand out */
+}
+/*------------------------app.cs---------------------------------*/
+
+  .App {
+    text-align: center;
+  }
+  
+  
+
+
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-Name {
+    text-align: center; /* Centers the text */
+    color: white;       /* Sets the text color to white */
+    font-size: 24px;    /* Makes the font larger */
+    font-family: Arial, sans-serif; /* Optional: Sets the font-family */
+    padding: 30x; /* Adds padding around the content */
+    margin-bottom: 10px;
+    margin-top: 10px; /* Adds space below the header */
+}
+
+.App-date {
+    color: grey;        /* Sets the date text color to grey */
+    font-size: 18px;    /* Sets a smaller font size for the date */
+    font-family: 'Courier New', Courier, monospace; /* Sets a different font-family */
+    margin-top: 10px;   /* Adds space between the date and the header text */
+}
+  
+
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+  /*--------------------------TemperatureGraph.css*/
+  .graph-container {
+    background-color: #333; /* Dark background for the graph container */
+    color: #6a0a0a; /* Light grey text for readability */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 0px;
+    border: 10px solid #fff;
+  }
+  
+  .graph-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff; /* White color for the title */
+    
+  }
+  
+  .graph-chart {
+    background-color: #333;
+    padding-bottom: 30px; /* Ensuring the graph chart background is also dark */
+    
+  }
+  
+
+  /*----------------------------WeatherDisplay.css-----------------------*/
+  .weather-container {
+    color: white;
+    background-color: #333; /* Dark grey background */
+    padding: 20px;
+
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Different font from the title */
+    border: 2px solid #fff;
+    position: relative;
+  }
+  
+  .weather-title {
+    font-size: 22px;
+    padding-left: 35px; 
+    text-align: left;
+    margin-bottom: 10px;
+    color: #ccc; /* Lighter grey color */
+  }
+  
+  .weather-content {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: space-between;
+  }
+
+  .rest-data{
+    font-weight: 200;
+  }
+  
+
+  .weather-icon {
+    width: 100px; /* Set width to contain the icon */
+    text-align: center; /* Centers the icon horizontally */
+  }
+
+  .temperature-data{
+    font-size: 30px;
+  }
+  
+  .weather-icon img {
+    width: 120px; /* Actual width of the icon */
+    height: auto;
+  }
+  
+  .weather-data {
+    flex-grow: 1;
+    font-family: Arial, sans-serif;
+    padding-left: 10px; 
+    text-align: left;/* Space between icon and data */
+  }
+  
+  .weather-footer {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+    color: #aaa; /* Light grey color */
+  }
+  
+  .suggestions {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 40px; /* Adjust as needed */
+    text-align: right;
+    font-size: 22px;
+    padding-left: 35px; 
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ccc; /* Lighter grey color */
+    }
+  
+/* ---------------------------TemperatureToggle.js------------------------------*/
+/* Styling for temperature toggle buttons */
+.temperature-toggle {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.temperature-button {
+  background-color: #333; /* Dark grey background for inactive state */
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.temperature-button:hover {
+  background-color: #555; /* Lighter grey on hover */
+}
+
+.temperature-button.active {
+  background-color: #999; /* Distinct color for active state */
+  font-weight: bold; /* Make the text bold for active state */
+}
+
+/*--------------------------------TemperatureToogle.js------------------*/
+.dashboard {
+  display: flex;
+  justify-content: space-around; /* Adjusts the spacing around items */
+  align-items: start; /* Aligns items at the start of the line */
+  padding: 5px 0;
+  
+   /* Adds vertical padding */
+
+}
+
+/* Ensuring that each child takes up only the required width */
+.weather-container, .graph-container {
+  flex: 1 1 50%; /* Each child can grow and shrink but starts with 50% of the space */
+  margin: 0 2px; /* Adds horizontal spacing */
+  border: 2px solid #fff;
+  
+  
+  
+}
+
+@media (max-width: 768px) { /* Adjusting layout for smaller screens */
+  .dashboard {
+    flex-direction: column;
+  }
+  .weather-container, .graph-container {
+    flex: 1 1 100%; /* Each child takes the full width on smaller screens */
+    border: 2px solid #fff;
+    
+  }
+}

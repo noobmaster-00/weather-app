@@ -1,0 +1,17 @@
+.graph-container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .graph-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .graph-chart {
+    max-width: 100%;
+    height: auto;
+  }
+  

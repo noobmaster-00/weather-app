@@ -1,0 +1,22 @@
+.forecast-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.forecast-scrollable {
+  display: flex;
+}
+
+.forecast-day {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+
+.forecast-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.forecast-item {
+  margin-bottom: 5px;
+}
