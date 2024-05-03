@@ -1,4 +1,4 @@
-**Weather Forecast Application**
+**Weather Forecast Application** :
 Description
 This is a simple weather forecast application built using React.js. It fetches weather forecast data from the OpenWeatherMap API based on the city name and displays the forecast for the next few days along with a chart showing the temperature trends.
 
