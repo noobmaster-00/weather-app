@@ -49,10 +49,8 @@ body{
 
   
   /*------------------------Forecast.cs---------------------------------*/
-  
-  /* Forecast.css */
+/* Forecast.css */
 .forecast-container {
-  overflow-x: auto;
   padding: 20px;
   margin-left: 5px;
   margin-right: 5px;
@@ -60,15 +58,28 @@ body{
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   color: #ddd; /* Light grey text for readability */
-  border: 2px solid #fff;
   margin-top: 0px;
+  position: relative; /* Make the container position relative */
 }
 
 .forecast-scrollable {
   display: flex;
   align-items: center; /* Center items vertically */
+  height: 50vh; /* 50% of the viewport height */
+  overflow-y: scroll; /* Add scroll if content overflows */
 }
 
+/* Additional styles for the pie chart */
+#pie-chart {
+  width: 200px; /* Set the width of the pie chart */
+  height: 200px; /* Set the height of the pie chart */
+  background-color: #333; /* Dark background */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute; /* Position the chart absolutely */
+  top: 20px; /* 20px from the top */
+  right: 20%; /* 20% from the right */
+}
 .forecast-day {
   display: flex;
   flex-direction: column;
@@ -108,6 +119,8 @@ body{
   font-weight: bold;
   color: #FFD700; /* Gold color for temperature to stand out */
 }
+
+
 /*------------------------app.cs---------------------------------*/
 
   .App {
@@ -167,7 +180,6 @@ body{
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 0px;
-    border: 10px solid #fff;
   }
   
   .graph-title {
@@ -190,11 +202,9 @@ body{
     color: white;
     background-color: #333; /* Dark grey background */
     padding: 20px;
-
     border-radius: 8px;
     font-family: Arial, sans-serif;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Different font from the title */
-    border: 2px solid #fff;
     position: relative;
   }
   
@@ -303,8 +313,6 @@ body{
 .weather-container, .graph-container {
   flex: 1 1 50%; /* Each child can grow and shrink but starts with 50% of the space */
   margin: 0 2px; /* Adds horizontal spacing */
-  border: 2px solid #fff;
-  
   
   
 }
@@ -315,7 +323,6 @@ body{
   }
   .weather-container, .graph-container {
     flex: 1 1 100%; /* Each child takes the full width on smaller screens */
-    border: 2px solid #fff;
     
   }
 }
