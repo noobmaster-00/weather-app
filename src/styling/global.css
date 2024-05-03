@@ -330,3 +330,35 @@ body{
     
   }
 }
+
+
+/* Use a mobile-first approach */
+/* Default styles for all screen sizes */
+.dashboard {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-around; /* Center items horizontally */
+  align-items: start; /* Align items at the start of the line */
+  padding: 5px 0;
+}
+
+.weather-container, .graph-container {
+  flex: 1 1 45%; /* Each child takes 45% of the space with some margin */
+  margin: 0 5px; /* Add some horizontal spacing */
+}
+
+/* Media query for tablets and larger devices */
+@media (min-width: 768px) {
+  .weather-container, .graph-container {
+    flex: 1 1 48%; /* Adjust the width for larger screens */
+    margin: 0 2px; /* Adjust the margin */
+  }
+}
+
+/* Media query for larger screens */
+@media (min-width: 1200px) {
+  .weather-container, .graph-container {
+    flex: 1 1 30%; /* Adjust the width for larger screens */
+    margin: 0 5px; /* Adjust the margin */
+  }
+}
