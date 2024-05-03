@@ -49,6 +49,35 @@ body{
 
   
   /*------------------------Forecast.cs---------------------------------*/
+  @media (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+    .search-input {
+      width: 100%; /* Full width on smaller screens */
+      margin-right: 0; /* Remove margin */
+    }
+  
+    #pie-chart {
+      width: 100%; /* Full width on smaller screens */
+      height: 200px; /* Adjust height as needed */
+      top: 20px; /* Keep it 20px from the top */
+      right: 0; /* Align to the right edge */
+      margin-left: auto; /* Align to the right */
+      margin-right: auto; /* Align to the right */
+    }
+  
+    .forecast-scrollable {
+      height: 100vh; /* Full height on smaller screens */
+    }
+  
+    .forecast-day {
+      margin-right: 0; /* Remove margin */
+    }
+  
+    .forecast-temperature {
+      font-size: 16px; /* Adjust font size */
+    }
+  }
+  
 /* Forecast.css */
 .forecast-container {
   padding: 20px;
