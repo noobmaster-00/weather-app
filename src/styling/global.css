@@ -87,9 +87,10 @@ body{
 }
 .forecast-day {
   display: flex;
+  
   flex-direction: column;
   align-items: center;
-  padding: 11px;
+  padding: 10px;
   margin-right: 20px;
   background-color: #444; /* Slightly lighter background for each day */
   border-radius: 8px;
