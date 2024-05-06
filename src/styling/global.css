@@ -82,14 +82,14 @@ body{
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: absolute; /* Position the chart absolutely */
-  top: 20px; /* 20px from the top */
+  top: 19px; /* 20px from the top */
   right: 20%; /* 20% from the right */
 }
 .forecast-day {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  padding: 11px;
   margin-right: 20px;
   background-color: #444; /* Slightly lighter background for each day */
   border-radius: 8px;

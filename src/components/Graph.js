@@ -9,6 +9,8 @@ import {
   Legend,
 } from 'recharts';
 
+
+
 function Graph({ data }) {
   // Assuming 'data' is an array of objects { date: '', temp: 0 }
   return (
