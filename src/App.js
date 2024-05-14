@@ -77,11 +77,7 @@ function App() {
     <div className="App">
       <SearchBar onSearch={handleSearch} />
       <Header />
-      <div className="dashboard">
-        {weatherData ? <WeatherDisplay data={weatherData} /> : <div>Loading or no weather data...</div>}
-        <TemperatureToggle unit={unit} setUnit={setUnit} />
-        {graphData && graphData.length > 0 ? <TemperatureGraph data={graphData} /> : <div>Loading or no graph data...</div>}
-      </div>
+    
       <Forecast city={city} unit={unit} />
     </div>
   );
